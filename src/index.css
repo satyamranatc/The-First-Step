@@ -4,6 +4,11 @@
   padding:0;
   box-sizing: border-box;
 }
+
+h2
+{
+  color:white;
+}
 body
 {
   color:black;
@@ -11,3 +16,34 @@ body
   font-family:sans-serif;
 }
 
+
+nav
+{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  height:65px;
+  background: #000000;
+  padding:0 10px;
+}
+
+nav ul
+{
+  display:flex;
+  column-gap: 20px;
+  list-style: none;
+}
+
+a
+{
+  color:white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+
+center
+{
+  margin-top:100px;
+
+}

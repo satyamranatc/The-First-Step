@@ -1,12 +1,22 @@
 import React from 'react'
+import NavBar from './NavBar'
+
+import Home from './pages/Home.jsx';
+import About from './pages/About.jsx';
+
+import { BrowserRouter,Routes,Route } from 'react-router'
 
 export default function App() {
   return (
     <div>
-      <center>
-        <h1>Hello By React App</h1>
-        <p>This is my first react app</p>
-      </center>
+      <BrowserRouter>
+        <NavBar/>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/about" element={<About/>}/>
+        </Routes>
+      
+      </BrowserRouter>
       
     </div>
   )
